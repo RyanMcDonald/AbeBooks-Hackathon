@@ -4,10 +4,12 @@ import json
 import sys
 import os
 import getopt
+import MySQLdb
 
 def process_json(json_data):
 	for line in json_data["items"]:
 		sql = "INSERT INTO items (name, category) VALUES ('" + line["name"] + "', '" + line["category"] + "')"
+		cursor.execute(sql)
 
 def process_csv(csv_data):
 	print "Processing CSV file!"
