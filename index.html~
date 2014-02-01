@@ -136,7 +136,7 @@ alert("Button is working");
 <nav><ul>
 <div class="btn-group">
   <button type="button" class="btn btn-info" onclick="contactform()">Search An Item</button>
-  <button type="button" class="btn btn-info" onclick="connects()">Submit An Item</button>
+  <button type="button" class="btn btn-info" onclick="connects()>Submit An Item</button>
 </div>
 </nav></ul>
 </div>
