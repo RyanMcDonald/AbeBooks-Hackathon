@@ -3139,7 +3139,9 @@ input[type="button"].btn-block {
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
-  float: left;
+  float: center;	/*left*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover,
@@ -3159,7 +3161,7 @@ input[type="button"].btn-block {
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
-  margin-left: -1px;
+  margin-left: 200px; /*-1*/
 }
 .btn-toolbar {
   margin-left: -5px;
@@ -3177,7 +3179,9 @@ input[type="button"].btn-block {
   border-radius: 0;
 }
 .btn-group > .btn:first-child {
-  margin-left: 0;
+  margin-left: auto;
+  margin-right:auto;
+  float: center;
 }
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-top-right-radius: 0;
@@ -3189,7 +3193,7 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
 }
 .btn-group > .btn-group {
-  float: left;
+  float: center;
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
