@@ -40,7 +40,7 @@
     	float: left;
    	margin-left: 46px;
         margin-left-value: 46px;
-    	margin-left-ltr-source: physical;src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    	margin-left-ltr-source: physical;
         margin-left-rtl-source: physical;
 }
 
@@ -108,25 +108,25 @@ element:hover{
 }
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
- 	$('#testButton').addClass('active');
+ 	$('#b1').addClass('active');
 });
 
-
-$("text.contactbuttons").click(function() {
-    $(this).siblings(".keep").removeClass("keep");
-    $(this).addClass("keep");
-});
 
 function contactform(){
 document.getElementById('connect').style.display = "block"; 
 document.getElementById('formcontainer').style.display = "none";	/*not displayed*/
+$('#b1').addClass('active');
+$('#b2').removeClass('active');
 }
 
 function connects(){
 document.getElementById('formcontainer').style.display = "block"; 
 document.getElementById('connect').style.display = "none"; 
+$('#b2').addClass('active');
+$('#b1').removeClass('active');
 }
 
 function print(){
@@ -148,8 +148,8 @@ alert("Button is working");
 <div id="contactbuttons" class="text-center">
 <nav><ul>
 <div class="btn-group">
-  <button type="button" id="testButton" class="btn btn-info" onclick="contactform()">Search An Item</button>
-  <button type="button" class="btn btn-info" onclick="connects()">Submit An Item</button>
+  <button type="button" id="b1" class="btn btn-info" onclick="contactform()">Search An Item</button>
+  <button type="button" id="b2" class="btn btn-info" onclick="connects()">Submit An Item</button>
 </div>
 </nav></ul>
 </div>
