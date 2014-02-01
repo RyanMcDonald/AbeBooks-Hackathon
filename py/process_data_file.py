@@ -7,8 +7,7 @@ import getopt
 
 def process_json(json_data):
 	for line in json_data["items"]:
-		sql = "INSERT INTO items (name, category) VALUES (%s, %s)"
-		cursor.execute(sql, [line["name"], line["category"] ])
+		sql = "INSERT INTO items (name, category) VALUES ('" + line["name"] + "', '" + line["category"] + "')"
 
 def process_csv(csv_data):
 	print "Processing CSV file!"
