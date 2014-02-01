@@ -109,10 +109,6 @@ element:hover{
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
- 	$('#testButton').addClass('active');
-});
-
 
 $("text.contactbuttons").click(function() {
     $(this).siblings(".keep").removeClass("keep");
@@ -148,7 +144,7 @@ alert("Button is working");
 <div id="contactbuttons" class="text-center">
 <nav><ul>
 <div class="btn-group">
-  <button type="button" id="testButton" class="btn btn-info" onclick="contactform()">Search An Item</button>
+  <button type="button" class="btn btn-info active" onclick="contactform()">Search An Item</button>
   <button type="button" class="btn btn-info" onclick="connects()">Submit An Item</button>
 </div>
 </nav></ul>
